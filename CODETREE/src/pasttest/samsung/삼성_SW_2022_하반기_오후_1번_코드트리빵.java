@@ -6,14 +6,12 @@ import java.io.InputStreamReader;
 import java.util.ArrayDeque;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.StringTokenizer;
 import java.util.TreeMap;
 
 public class 삼성_SW_2022_하반기_오후_1번_코드트리빵 {
 
-	private static final int SPACE = 0;
 	private static final int BASECAMP = 1;
 	private static final int CANTGO = 2;
 
@@ -103,6 +101,9 @@ public class 삼성_SW_2022_하반기_오후_1번_코드트리빵 {
 			}
 
 			// 3. 현재시간 t, t<=m 만족시 t 번사람은 베이스 캠프에 이동
+			/** 오답노트: 거리를 계산해서 최단 거리를 구했는데,
+			 *  갈 수 없는 공간이 생김에 따라 실제로 이동가능한지 여부를
+			 *   직접 확인해봐야했음..bfs()*/
 			movetobase(t);
 			t++;
 
