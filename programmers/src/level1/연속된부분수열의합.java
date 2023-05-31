@@ -1,13 +1,10 @@
 package level1;
 
-public class 연속된부분수열의합 {
-
-}
 
 import java.util.*;
 //비내림차순: 다음 수가 같거나 커짐
 
-class Solution {
+class 연속된부분수열의합 {
  public int[] solution(int[] sequence, int k) {
      int[] answer = {-1, -1};
      
